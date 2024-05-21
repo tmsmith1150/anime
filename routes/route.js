@@ -26,7 +26,7 @@ const isLoggedIn = (req, res, next) => {
 };
 
 // Define routes
-router.get('/home', isLoggedIn, (req, res) => res.render('home', { funFact: getRandomFunFact() }));
+router.get('/', isLoggedIn, (req, res) => res.render('home', { funFact: getRandomFunFact() }));
 router.get('/login', (req, res) => res.render('login', { query: req.query }));
 router.get('/signup', (req, res) => res.render('signup', { query: req.query }));
 router.get('/comments', isLoggedIn, (req, res) => res.render('comments', { comments }));
