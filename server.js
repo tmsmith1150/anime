@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const { engine } = require('express-handlebars');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -36,7 +37,7 @@ app.use(session({
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to make session data available to Handlebars templates
 app.use((req, res, next) => {
