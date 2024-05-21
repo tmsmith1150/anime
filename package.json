@@ -9,6 +9,10 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tmsmith1150/anime"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
