@@ -7,8 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seeds/seed.js",
-    "deploy": "gh-pages -d build"
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
@@ -33,5 +32,8 @@
     "sequelize": "^6.37.3",
     "sequelize-cli": "^6.6.2",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
